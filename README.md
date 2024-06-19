@@ -1,41 +1,65 @@
-# Ex-4: Binary Classifier for MNIST
+# Binary Classifier for MNIST
 
-## Overview
-In this exercise, you will implement a binary classifier to classify a single number from the MNIST dataset. You will be required to complete the functions provided in the Python files.
+This repository contains solutions to exercises on implementing a binary classifier for MNIST dataset using PyTorch.
 
-## Objectives
-1. Define dense models with single and hidden layers.
-2. Train a model to classify a single digit from the MNIST dataset.
-3. Evaluate the performance of the trained model.
+## Files
 
-## The Assignment
-You are required to complete the following functions in 'layered_model.py'. Your completed functions should pass the tests provided.
-1. `define_dense_model_single_layer`: Define a dense model with a single layer.
-2. `define_dense_model_with_hidden_layer`: Define a dense model with a hidden layer.
-3. `fit_mnist_model_single_digit`: Train the model for a single digit classification.
-4. `evaluate_mnist_model_single_digit`: Evaluate the performance of the trained model.
+1. **`layered_model.py`**: Contains functions to define dense models, train the models for single digit classification, and evaluate their performance.
 
----
+## Exercise Details
 
-## Validating and Evaluating Your Results
+### Overview
 
-### Online
-1. After committing and pushing your code, check the mark on the top line (near the commit ID).
-2. If some tests are failing, click on the ❌ to open up a popup, which will show details about the errors.
-3. You can click the [Details]() link to see what went wrong. Pay special attention to lines with the words "Failed" or "error".
+In this exercise, you will implement a binary classifier to classify a single number from the MNIST dataset. The objectives include defining dense models with single and hidden layers, training the models, and evaluating their performance.
+
+### Functions to Implement
+
+1. **`define_dense_model_single_layer`**: Define a dense model with a single layer.
+2. **`define_dense_model_with_hidden_layer`**: Define a dense model with a hidden layer.
+3. **`fit_mnist_model_single_digit`**: Train the model for a single digit classification.
+4. **`evaluate_mnist_model_single_digit`**: Evaluate the performance of the trained model.
+
+### Validation and Evaluation
+
+#### Online Platform
+
+After committing and pushing your code:
+1. Check the mark on the top line near the commit ID.
+2. Review detailed test results by clicking on the ❌ to view errors.
+3. Click on the [Details]() link to see specifics about failed tests and score details.
 
 ![screnshot](images/details_screenshot.png)
 
-4. Near the bottom of the [Details]() page, you can see your score. Here are examples of 0/5 and 5/5:
+#### Local Testing
 
-![score](images/score.png) ![success](images/success.png)
+1. Install pytest if not already installed:
+   ```sh
+   pip install pytest
+   ```
+2. Run tests:
+   ```sh
+   pytest
+   ```
 
-5. When you achieve a perfect score, you will see a green checkmark near the commit ID.
+## Usage
 
-![green](images/green.png)
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/samiamjidkhan/binary-classifier-mnist.git
+   cd binary-classifier-mnist
+   ```
 
-### Locally
-1. You can test your code locally by installing and running `pytest` (`pip install pytest` or `conda install pytest`).
-2. Run the tests using the command `pytest` in your terminal. This will show the status of each test and any errors that occurred.
+2. Implement and test your solutions following the instructions in `layered_model.py`.
 
-Good luck!
+### Running Tests
+
+To validate locally:
+1. Install pytest if not already installed:
+   ```sh
+   pip install pytest
+   ```
+2. Run tests:
+   ```sh
+   pytest
+   ```
+
